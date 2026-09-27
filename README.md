@@ -58,9 +58,9 @@ Below is a comparison of top cloud-hosted AuthNaaS platforms sorted by **Company
 
 ## 🔓 Open-Source GitHub Projects
 
-Top open-source authentication, IAM, and SSO repositories sorted by **GitHub Stars (Descending)**:
+Top open-source authentication, IAM, and SSO repositories sorted by **GitHub_Stars (Descending)**:
 
-| 📦 Open-Source Project | ⭐ GitHub Stars | 📜 License | 📝 Description |
+| 📦 Open-Source Project | ⭐ GitHub_Stars | 📜 License | 📝 Description |
 | :--- | :--- | :--- | :--- |
 | **[Keycloak](https://github.com/keycloak/keycloak)** | [![Keycloak Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | Apache-2.0 | Leading IAM system supporting OAuth 2.0, OpenID Connect, SAML 2.0, LDAP, and user federation. |
 | **[Authentik](https://github.com/goauthentik/authentik)** | [![Authentik Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers) | GPL-3.0 | Modern, flexible identity provider with flow-based authentication, SAML, OAuth2, and proxy support. |
