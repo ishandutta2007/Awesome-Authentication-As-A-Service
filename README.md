@@ -1,36 +1,47 @@
-# Awesome Authentication-as-a-Service (AuthNaaS)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Authentication-as-a-Service Banner" width="100%">
+</p>
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# 🔐 Awesome Authentication-as-a-Service (AuthNaaS)
 
-> A curated list of top **Authentication-as-a-Service (AuthNaaS)**, **Identity and Access Management (IAM)**, **Single Sign-On (SSO)**, **Passwordless Authentication**, and **Identity-as-a-Service (IDaaS)** SaaS products and open-source GitHub projects.
+<p align="left">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome List"/></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 A curated list of top **Authentication-as-a-Service (AuthNaaS)**, **Identity and Access Management (IAM)**, **Single Sign-On (SSO)**, **Passwordless Authentication**, and **Identity-as-a-Service (IDaaS)** SaaS products and open-source GitHub projects.
 
 *Focused on Identity Management, Single Sign-On (SSO), Passkeys, WebAuthn, OAuth2/OIDC, and Passwordless Authentication.*
 
-**Last updated: March 2026**
+**📅 Last updated: March 2026**
 
 ---
 
-## Table of Contents
-- [Market Overview](#market-overview)
-- [SaaS & Hosted Platforms](#saas--hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+## 📌 Table of Contents
+- [📊 Market Overview](#-market-overview)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Architecture Guide: Choosing the Right Auth Strategy](#️-architecture-guide-choosing-the-right-auth-strategy)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
 
 ---
 
-## Market Overview
+## 📊 Market Overview
 
-> **Market Size & Fragmentation:** The global Identity-as-a-Service (IDaaS) and Authentication-as-a-Service (AuthNaaS) market is estimated at **$12.8 Billion to $15.5 Billion in 2026**, with projections reaching over **$33.5 Billion by 2030** (CAGR ~25%). The broader IAM industry exceeds **$20 Billion**. The AuthNaaS sector is **moderately fragmented**—while enterprise giants (like Okta/Auth0 and Microsoft Entra) hold substantial market share in large enterprises, developer-focused authentication (Clerk, Stytch, WorkOS, Descope) and open-core solutions (Keycloak, Zitadel, Ory, SuperTokens) continue to thrive and capture rapid developer adoption.
+> 💡 **Market Size & Fragmentation:** The global Identity-as-a-Service (IDaaS) and Authentication-as-a-Service (AuthNaaS) market is estimated at **$12.8 Billion to $15.5 Billion in 2026**, with projections reaching over **$33.5 Billion by 2030** (CAGR ~25%). The broader IAM industry exceeds **$20 Billion**. The AuthNaaS sector is **moderately fragmented**—while enterprise giants (like Okta/Auth0 and Microsoft Entra) hold substantial market share in large enterprises, developer-focused authentication (Clerk, Stytch, WorkOS, Descope) and open-core solutions (Keycloak, Zitadel, Ory, SuperTokens) continue to thrive and capture rapid developer adoption.
 
 ---
 
-## SaaS & Hosted Platforms
+## ☁️ SaaS & Hosted Platforms
 
 Below is a comparison of top cloud-hosted AuthNaaS platforms sorted by **Company Size / Valuation (Descending)**:
 
-| SaaS Platform | Company Size / Valuation / Funding | Starting Price | Free Tier Limits | Key Features |
+| 🏢 SaaS Platform | 💰 Company Size / Valuation / Funding | 🏷️ Starting Price | 🎁 Free Tier Limits | ✨ Key Features |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Auth0](https://auth0.com/)** | **$6.5 Billion** valuation *(Acquired by Okta for $6.5B)* | $35 / month (B2C) / $23 / month (B2B) | Up to 7,500 Monthly Active Users (MAUs) & 10 social connections | Enterprise-grade identity, extensible authorization, SAML/OIDC, global compliance |
 | **[WorkOS](https://workos.com/)** | **$2.0 Billion** valuation *(ARR ~$30M+, Series C)* | $125 / month per SSO/SCIM connection | Free up to 1,000,000 MAUs for User Management (AuthKit) | Enterprise SSO, SCIM Directory Sync, RBAC, Audit Logs, AuthKit UI |
@@ -45,11 +56,11 @@ Below is a comparison of top cloud-hosted AuthNaaS platforms sorted by **Company
 
 ---
 
-## Open-Source GitHub Projects
+## 🔓 Open-Source GitHub Projects
 
 Top open-source authentication, IAM, and SSO repositories sorted by **GitHub Stars (Descending)**:
 
-| Open-Source Project | GitHub Stars | License | Description |
+| 📦 Open-Source Project | ⭐ GitHub Stars | 📜 License | 📝 Description |
 | :--- | :--- | :--- | :--- |
 | **[Keycloak](https://github.com/keycloak/keycloak)** | [![Keycloak Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | Apache-2.0 | Leading IAM system supporting OAuth 2.0, OpenID Connect, SAML 2.0, LDAP, and user federation. |
 | **[Authentik](https://github.com/goauthentik/authentik)** | [![Authentik Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers) | GPL-3.0 | Modern, flexible identity provider with flow-based authentication, SAML, OAuth2, and proxy support. |
@@ -77,30 +88,46 @@ Top open-source authentication, IAM, and SSO repositories sorted by **GitHub Sta
 
 ---
 
-## Architecture Guide: Choosing the Right Auth Strategy
+## 🛠️ Architecture Guide: Choosing the Right Auth Strategy
 
-- **For Next.js / React Apps:** [Clerk](https://clerk.com/) or [Stack Auth](https://github.com/stack-auth/stack-auth) for fastest integration and pre-built UI components.
-- **For B2B Enterprise SaaS (SSO/SCIM):** [WorkOS](https://workos.com/), [SSOReady](https://github.com/ssoready/ssoready), or [BoxyHQ Jackson](https://github.com/boxyhq/jackson).
-- **For Passwordless & Passkey-First:** [Stytch](https://stytch.com/), [Hanko](https://www.hanko.io/), or [Magic](https://magic.link/).
-- **For Self-Hosted Enterprise IAM:** [Keycloak](https://github.com/keycloak/keycloak), [Zitadel](https://github.com/zitadel/zitadel), or [Authentik](https://github.com/goauthentik/authentik).
-- **For Microservices & Custom Flows:** [Ory Kratos](https://github.com/ory/kratos) or [SuperTokens](https://github.com/supertokens/supertokens-core).
-
----
-
-## How to Contribute
-
-1. Fork this repository.
-2. Add/edit entries in `README.md` following the exact tabular or bullet format.
-3. Include the project name, official website / repository link, key details (pricing/stars), and licensing.
-4. Submit a Pull Request with a clear title and description.
+- ⚡ **For Next.js / React Apps:** [Clerk](https://clerk.com/) or [Stack Auth](https://github.com/stack-auth/stack-auth) for fastest integration and pre-built UI components.
+- 🏢 **For B2B Enterprise SaaS (SSO/SCIM):** [WorkOS](https://workos.com/), [SSOReady](https://github.com/ssoready/ssoready), or [BoxyHQ Jackson](https://github.com/boxyhq/jackson).
+- 🔑 **For Passwordless & Passkey-First:** [Stytch](https://stytch.com/), [Hanko](https://www.hanko.io/), or [Magic](https://magic.link/).
+- 🛡️ **For Self-Hosted Enterprise IAM:** [Keycloak](https://github.com/keycloak/keycloak), [Zitadel](https://github.com/zitadel/zitadel), or [Authentik](https://github.com/goauthentik/authentik).
+- 🏗️ **For Microservices & Custom Flows:** [Ory Kratos](https://github.com/ory/kratos) or [SuperTokens](https://github.com/supertokens/supertokens-core).
 
 ---
 
-## Disclaimer
+## 🤝 How to Contribute
 
-- This list is **community-curated** for educational and architectural reference.
-- Ensure all authentication systems implement security best practices (OAuth 2.0, OpenID Connect, SAML 2.0, FIDO2 WebAuthn) and comply with privacy regulations (GDPR, CCPA, SOC2).
+1. 🍴 Fork this repository.
+2. 📝 Add/edit entries in `README.md` following the exact tabular format.
+3. 🔎 Include the project name, official website / repository link, key details (pricing/stars), and licensing.
+4. 🚀 Submit a Pull Request with a clear title and description.
 
 ---
 
-**Maintained for developers, security engineers, system architects, and platform teams.**
+## ⚠️ Disclaimer
+
+- 📌 This list is **community-curated** for educational and architectural reference.
+- 🔒 Ensure all authentication systems implement security best practices (OAuth 2.0, OpenID Connect, SAML 2.0, FIDO2 WebAuthn) and comply with privacy regulations (GDPR, CCPA, SOC2).
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for visiting this repository! If you find this curated list of Authentication-as-a-Service tools helpful, please consider giving it a ⭐ **Star**, sharing it with fellow developers, or forking the repo to add your contributions.
+
+If you would like to support the ongoing maintenance and development of awesome developer resources, consider sponsoring via GitHub Sponsors or buying a coffee:
+
+<a href="https://github.com/sponsors/ishandutta2007"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github" alt="Sponsor"/></a>
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## 📈 Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Authentication-As-A-Service&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Authentication-As-A-Service&type=date&legend=top-left)
+
+---
+
+**Maintained with ❤️ for developers, security engineers, system architects, and platform teams.**

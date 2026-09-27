@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 42px; fill: #ffffff; }
+    .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #cbd5e1; }
+    .badge-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; fill: #38bdf8; }
+    
+    @keyframes pulseGlow {
+      0% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.05); }
+      100% { opacity: 0.3; transform: scale(1); }
+    }
+    
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(180deg); }
+      100% { transform: translateY(0px) rotate(360deg); }
+    }
+
+    @keyframes dash {
+      to { stroke-dashoffset: -40; }
+    }
+
+    .pulsing-bg { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+    .floating-shape { animation: floatParticle 8s ease-in-out infinite; transform-origin: center; }
+    .flow-line { stroke-dasharray: 8 8; animation: dash 2s linear infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Dynamic Animated Background Elements (Kept faint and positioned behind) -->
+  <circle cx="950" cy="160" r="180" fill="url(#accentGrad)" opacity="0.15" class="pulsing-bg"/>
+  <circle cx="150" cy="80" r="120" fill="#38bdf8" opacity="0.1" class="pulsing-bg"/>
+  
+  <!-- Subtle Grid Lines -->
+  <path d="M0 80 H1200 M0 160 H1200 M0 240 H1200 M300 0 V320 M600 0 V320 M900 0 V320" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Decorative Animated Flow Connecting Nodes on Right Side (Background Layer) -->
+  <g opacity="0.35" transform="translate(720, 40)">
+    <path d="M 50 120 Q 150 40 250 120 T 450 120" stroke="url(#accentGrad)" stroke-width="3" fill="none" class="flow-line"/>
+    <circle cx="50" cy="120" r="8" fill="#6366f1" class="floating-shape"/>
+    <circle cx="250" cy="120" r="10" fill="#a855f7"/>
+    <circle cx="450" cy="120" r="8" fill="#ec4899" class="floating-shape"/>
+  </g>
+
+  <!-- Lock & Key Security Graphic (Right Side) -->
+  <g transform="translate(980, 110)" filter="url(#shadow)">
+    <!-- Shield Outline -->
+    <path d="M 0 -50 L 50 -30 V 20 C 50 55 0 80 0 80 C 0 80 -50 55 -50 20 V -30 Z" fill="none" stroke="url(#accentGrad)" stroke-width="4"/>
+    <!-- Lock Icon -->
+    <rect x="-18" y="-5" width="36" height="30" rx="4" fill="#38bdf8"/>
+    <path d="M -10 -5 V -16 A 10 10 0 0 1 10 -16 V -5" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="8" r="3" fill="#0f172a"/>
+  </g>
+
+  <!-- Foreground Content (Text & Badges) -->
+  <g transform="translate(80, 0)">
+    <!-- Category Pill -->
+    <g transform="translate(0, 50)">
+      <rect width="240" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="12" y="21" class="badge-text">🔐 AuthNaaS Ecosystem 2026</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="130" class="title" filter="url(#shadow)">
+      Awesome Authentication-as-a-Service
+    </text>
+
+    <!-- Gradient Line Divider -->
+    <rect x="0" y="150" width="480" height="4" rx="2" fill="url(#accentGrad)"/>
+
+    <!-- Subtitle -->
+    <text x="0" y="195" class="subtitle">
+      Identity Management • Single Sign-On (SSO) • Passkeys &amp; Passwordless
+    </text>
+    
+    <!-- Feature Chips -->
+    <g transform="translate(0, 225)">
+      <rect x="0" y="0" width="110" height="28" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+      <text x="55" y="18" font-family="sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">OAuth2 / OIDC</text>
+
+      <rect x="120" y="0" width="90" height="28" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+      <text x="165" y="18" font-family="sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">SAML 2.0</text>
+
+      <rect x="220" y="0" width="120" height="28" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+      <text x="280" y="18" font-family="sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">FIDO2 / WebAuthn</text>
+
+      <rect x="350" y="0" width="100" height="28" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+      <text x="400" y="18" font-family="sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Open-Source</text>
+    </g>
+  </g>
+</svg>
